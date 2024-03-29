@@ -1,9 +1,7 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function Blog() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      put something here
+      this is the blog page
     </main>
   );
 }
