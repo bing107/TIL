@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { PostMeta } from "@/lib/content";
+import TagPill from "@/components/tag-pill";
 
 interface PostCardProps {
   post: PostMeta;
@@ -40,12 +41,7 @@ export default function PostCard({ post }: PostCardProps) {
       {post.tags.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-2">
           {post.tags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
-            >
-              {tag}
-            </span>
+            <TagPill key={tag} tag={tag} />
           ))}
         </div>
       )}
