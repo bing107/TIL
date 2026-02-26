@@ -103,3 +103,27 @@ export function getAllSlugs(): string[] {
     .filter((f) => f.endsWith(".mdx"))
     .map((f) => f.replace(/\.mdx$/, ""));
 }
+
+export function getAllTags(): string[] {
+  const posts = getAllPosts();
+  const tagSet = new Set<string>();
+
+  for (const post of posts) {
+    for (const tag of post.tags) {
+      tagSet.add(tag);
+    }
+  }
+
+  return Array.from(tagSet).sort((a, b) =>
+    a.localeCompare(b, undefined, { sensitivity: "base" }),
+  );
+}
+
+export function getPostsByTag(tag: string): PostMeta[] {
+  const posts = getAllPosts();
+  const lowerTag = tag.toLowerCase();
+
+  return posts.filter((post) =>
+    post.tags.some((t) => t.toLowerCase() === lowerTag),
+  );
+}
