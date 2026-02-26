@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllSlugs, getPostBySlug } from "@/lib/content";
 import MdxContent from "@/components/mdx-content";
+import TagPill from "@/components/tag-pill";
 import type { Metadata } from "next";
 
 interface PageProps {
@@ -68,12 +69,7 @@ export default async function PostPage({ params }: PageProps) {
       {post.tags.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-2">
           {post.tags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
-            >
-              {tag}
-            </span>
+            <TagPill key={tag} tag={tag} />
           ))}
         </div>
       )}
