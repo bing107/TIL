@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/lib/constants";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TIL — Hassan Syed",
-  description:
-    "Today I Learned — short posts about things I learn day to day.",
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  alternates: {
+    types: {
+      "application/atom+xml": "/feed.xml",
+    },
+  },
 };
 
 /*
