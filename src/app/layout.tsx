@@ -29,9 +29,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans flex flex-col min-h-screen antialiased">
         <Header />
-        <main className="flex-1 max-w-2xl mx-auto px-4 py-8 w-full">
+        <div className="flex-1 max-w-2xl mx-auto px-4 py-8 w-full">
           {children}
-        </main>
+        </div>
         <Footer />
       </body>
     </html>
