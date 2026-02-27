@@ -48,6 +48,15 @@ test.describe("Tag archive page — /tags/meta", () => {
     await expect(tagLink).toBeVisible();
     await expect(tagLink).toHaveAttribute("href", "/tags/meta");
   });
+
+  test("responsive — renders correctly on mobile viewport", async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    await page.goto("/tags/meta");
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    await expect(page.getByRole("article").first()).toBeVisible();
+  });
 });
 
 test.describe("Tag archive — 404 handling", () => {
