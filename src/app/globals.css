@@ -17,6 +17,7 @@ body::before {
 
 body {
   color: black;
+  background-color: #D0ECC0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,5 +27,6 @@ body {
 
   body {
     color: white;
+    background-color: #070D2A;
   }
 }
