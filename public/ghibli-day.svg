@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6BBDE3"/>
+      <stop offset="55%" stop-color="#A8D8EE"/>
+      <stop offset="100%" stop-color="#D0ECC0"/>
+    </linearGradient>
+    <linearGradient id="far-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7BBF82"/>
+      <stop offset="100%" stop-color="#5A9462"/>
+    </linearGradient>
+    <linearGradient id="mid-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5CA466"/>
+      <stop offset="100%" stop-color="#3D7A50"/>
+    </linearGradient>
+    <linearGradient id="near-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A9458"/>
+      <stop offset="100%" stop-color="#2A5E38"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="1440" height="900" fill="url(#sky)"/>
+  <!-- Sun glow -->
+  <circle cx="1200" cy="80" r="60" fill="rgba(255,230,150,0.25)"/>
+  <circle cx="1200" cy="80" r="40" fill="rgba(255,230,150,0.4)"/>
+  <circle cx="1200" cy="80" r="25" fill="rgba(255,220,100,0.6)"/>
+  <!-- Cloud group 1 (left) -->
+  <ellipse cx="200" cy="170" rx="130" ry="45" fill="rgba(255,255,255,0.85)"/>
+  <ellipse cx="155" cy="185" rx="80" ry="38" fill="rgba(255,255,255,0.75)"/>
+  <ellipse cx="265" cy="155" rx="100" ry="40" fill="rgba(255,255,255,0.9)"/>
+  <ellipse cx="320" cy="170" rx="75" ry="32" fill="rgba(255,255,255,0.8)"/>
+  <!-- Cloud group 2 (center-right) -->
+  <ellipse cx="850" cy="130" rx="110" ry="40" fill="rgba(255,255,255,0.8)"/>
+  <ellipse cx="800" cy="145" rx="80" ry="35" fill="rgba(255,255,255,0.7)"/>
+  <ellipse cx="930" cy="120" rx="95" ry="36" fill="rgba(255,255,255,0.85)"/>
+  <!-- Cloud group 3 (far right) -->
+  <ellipse cx="1250" cy="220" rx="100" ry="38" fill="rgba(255,255,255,0.75)"/>
+  <ellipse cx="1180" cy="235" rx="75" ry="32" fill="rgba(255,255,255,0.65)"/>
+  <ellipse cx="1310" cy="210" rx="85" ry="30" fill="rgba(255,255,255,0.8)"/>
+  <!-- Far hills -->
+  <path d="M-50,720 Q150,600 350,660 Q500,610 650,650 Q800,600 1000,640 Q1150,590 1300,625 Q1380,605 1490,620 L1490,910 L-50,910 Z" fill="url(#far-hill)" opacity="0.9"/>
+  <!-- Mid hills -->
+  <path d="M-50,780 Q100,690 280,730 Q450,670 620,720 Q800,660 980,710 Q1150,655 1350,700 Q1420,680 1490,690 L1490,910 L-50,910 Z" fill="url(#mid-hill)"/>
+  <!-- Near hills -->
+  <path d="M-50,860 Q200,780 400,820 Q600,760 800,800 Q1000,750 1200,790 Q1350,765 1490,780 L1490,910 L-50,910 Z" fill="url(#near-hill)"/>
+</svg>

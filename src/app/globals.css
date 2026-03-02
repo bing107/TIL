@@ -2,14 +2,31 @@
 
 @plugin "@tailwindcss/typography";
 
+/* Ghibli-inspired fixed background scene — uses ::before pseudo-element
+   instead of background-attachment:fixed to avoid iOS Safari bugs */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url('/ghibli-day.svg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
 body {
   color: black;
-  background-color: #d6dbe0;
+  background-color: #D0ECC0;
 }
 
 @media (prefers-color-scheme: dark) {
+  body::before {
+    background-image: url('/ghibli-night.svg');
+  }
+
   body {
     color: white;
-    background-color: black;
+    background-color: #070D2A;
   }
 }

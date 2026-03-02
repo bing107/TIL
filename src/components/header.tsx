@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-[#d6dbe0] dark:bg-black">
+    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-md dark:bg-black/60">
       <nav className="mx-auto flex max-w-3xl items-center px-6 py-4">
         <Link
           href="/"
