@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="night-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070D2A"/>
+      <stop offset="60%" stop-color="#111D45"/>
+      <stop offset="100%" stop-color="#0D2535"/>
+    </linearGradient>
+    <linearGradient id="night-far-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#162D1E"/>
+      <stop offset="100%" stop-color="#0A1A10"/>
+    </linearGradient>
+    <linearGradient id="night-mid-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E2418"/>
+      <stop offset="100%" stop-color="#071310"/>
+    </linearGradient>
+    <linearGradient id="night-near-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A1E12"/>
+      <stop offset="100%" stop-color="#050D08"/>
+    </linearGradient>
+    <radialGradient id="moon-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(230,240,255,0.15)"/>
+      <stop offset="100%" stop-color="rgba(230,240,255,0)"/>
+    </radialGradient>
+  </defs>
+  <!-- Night sky -->
+  <rect width="1440" height="900" fill="url(#night-sky)"/>
+  <!-- Stars -->
+  <circle cx="50" cy="30" r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="120" cy="80" r="1" fill="white" opacity="0.7"/>
+  <circle cx="200" cy="45" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="300" cy="20" r="1" fill="white" opacity="0.9"/>
+  <circle cx="380" cy="70" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="450" cy="35" r="1" fill="white" opacity="0.85"/>
+  <circle cx="520" cy="90" r="2" fill="white" opacity="0.7"/>
+  <circle cx="600" cy="25" r="1" fill="white" opacity="0.9"/>
+  <circle cx="680" cy="60" r="1.5" fill="white" opacity="0.75"/>
+  <circle cx="750" cy="40" r="1" fill="white" opacity="0.8"/>
+  <circle cx="850" cy="15" r="2" fill="white" opacity="0.65"/>
+  <circle cx="920" cy="75" r="1" fill="white" opacity="0.9"/>
+  <circle cx="1000" cy="30" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="1080" cy="55" r="1" fill="white" opacity="0.85"/>
+  <circle cx="1150" cy="20" r="2" fill="white" opacity="0.6"/>
+  <circle cx="1230" cy="65" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="1310" cy="35" r="1" fill="white" opacity="0.75"/>
+  <circle cx="1390" cy="50" r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="70" cy="130" r="1" fill="white" opacity="0.6"/>
+  <circle cx="180" cy="150" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="350" cy="140" r="1" fill="white" opacity="0.8"/>
+  <circle cx="500" cy="160" r="1" fill="white" opacity="0.65"/>
+  <circle cx="700" cy="120" r="1.5" fill="white" opacity="0.75"/>
+  <circle cx="900" cy="145" r="1" fill="white" opacity="0.85"/>
+  <circle cx="1100" cy="135" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="1350" cy="155" r="1" fill="white" opacity="0.8"/>
+  <!-- Moon glow aura -->
+  <circle cx="280" cy="100" r="90" fill="url(#moon-glow)"/>
+  <!-- Moon -->
+  <circle cx="280" cy="100" r="35" fill="#EEF4FF" opacity="0.95"/>
+  <circle cx="295" cy="88" r="28" fill="#D8DFEE" opacity="0.3"/>
+  <!-- Night clouds (subtle dark wisps) -->
+  <ellipse cx="600" cy="200" rx="150" ry="35" fill="rgba(20,35,70,0.5)"/>
+  <ellipse cx="700" cy="190" rx="120" ry="28" fill="rgba(20,35,70,0.4)"/>
+  <ellipse cx="1100" cy="280" rx="130" ry="30" fill="rgba(20,35,70,0.45)"/>
+  <!-- Far hills -->
+  <path d="M-50,720 Q150,600 350,660 Q500,610 650,650 Q800,600 1000,640 Q1150,590 1300,625 Q1380,605 1490,620 L1490,910 L-50,910 Z" fill="url(#night-far-hill)"/>
+  <!-- Mid hills -->
+  <path d="M-50,780 Q100,690 280,730 Q450,670 620,720 Q800,660 980,710 Q1150,655 1350,700 Q1420,680 1490,690 L1490,910 L-50,910 Z" fill="url(#night-mid-hill)"/>
+  <!-- Near hills -->
+  <path d="M-50,860 Q200,780 400,820 Q600,760 800,800 Q1000,750 1200,790 Q1350,765 1490,780 L1490,910 L-50,910 Z" fill="url(#night-near-hill)"/>
+</svg>
